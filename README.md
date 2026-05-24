@@ -18,7 +18,7 @@ wall-clock differences for yourself).
 | 4 | [`04_yield_and_generators/`](04_yield_and_generators/)      | `yield` vs `await`: sync generators, async generators (`async def` + `yield` + `async for`), and why they're different from coroutines. |
 | 5 | [`05_tcp_echo_basics/`](05_tcp_echo_basics/)                | TCP server/client with `asyncio.start_server` / `asyncio.open_connection` and `StreamReader` / `StreamWriter`. |
 | 6 | [`06_async_chat_client/`](06_async_chat_client/)            | Capstone: a broadcast chat with a client that reads the network and stdin concurrently on one thread. |
-| 7 | [`07_multi_producer_queue/`](07_multi_producer_queue/)      | Fan-in with `asyncio.Queue`: three producers (stdin, TCP, UDP) feed one consumer engine; uses `asyncio.TaskGroup` and a UDP `DatagramProtocol`. |
+| 7 | [`07_multi_producer_queue/`](07_multi_producer_queue/)      | Fan-in with `asyncio.Queue`: three producers (stdin and two TCP listeners on different ports) feed one consumer engine; uses `asyncio.TaskGroup`. |
 
 Suggested order: 1 → 2 → 3 → 4 → 5 → 6 → 7.
 
